@@ -6,7 +6,7 @@ const httpProxy = require('http-proxy');
 const proxy = httpProxy.createProxyServer();
 
 // 目标服务器地址
-const targetServer = 'http://8.134.204.164:8090';
+const targetServer = process.env.TARGET_SERVER; 
 
 // 创建一个简单的 Express 应用
 const app = express();
